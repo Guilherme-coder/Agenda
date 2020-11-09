@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agenda</title>
+</head>
+<body>
+    <header>
+        <h1>Agenda</h1>    
+    </header>
+    <main>
+        <form>
+            <label for="name-form">Nome:</label>
+            <input type="text" id="name-form">
+
+            <label for="number-form">Numero:</label>
+            <input type="text" id="number-form">
+            
+            <label for="email-form">E-mail:</label>
+            <input type="text" id="email-form">
+        </form>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Nome</th>
+                    <th>Telefone</th>
+                    <th>E-Mail</th>
+                </tr>
+            </thead>
+            <tbody data-schedule>
+                
+            </tbody>
+        </table>
+    </main>
+
+    <button class="write" type="button">Inserir dados</button>
+
+    <script src="./js/writeData.js"></script>
+    <script src="./js/restart.js"></script>
+    
+    <script src="./js/writer.js"></script>
+    <script src="./js/excluir.js"></script>
+</body>
+</html>
