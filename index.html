@@ -1,46 +1,49 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Agenda</title>
-</head>
-<body>
-    <header>
-        <h1>Agenda</h1>    
-    </header>
-    <main>
-        <form>
-            <label for="name-form">Nome:</label>
-            <input type="text" id="name-form">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+        <link rel="stylesheet" href="./css/bootstrap/css/bootstrap.min.css">
+        <link rel="stylesheet" href="./css/style.css">
+    </head>
+    <body>
+        <h2 class="title-register">Para se cadastrar preencha os campos abaixo.</h2>
+        <form class="input-form">
+            <div class="form-group">
+                <label for="form-name">Nome: </label>
+                <input type="text" class="form-control" id="name" name="name">
+            </div>
+            <div class="form-group">
+                <label for="form-number">Número: </label>
+                <input type="tel" class="form-control" id="number" name="number">
+            </div>
+            <div class="form-group">
+                <label for="form-email">E-Mail: </label>
+                <input type="email" class="form-control" id="email" name="email">
+                <small id="emailHelp" class="form-text text-muted">Seu e-mail está seguro conosco.</small>
+            </div>
+            </form>
 
-            <label for="number-form">Numero:</label>
-            <input type="text" id="number-form">
-            
-            <label for="email-form">E-mail:</label>
-            <input type="text" id="email-form">
-        </form>
-
-        <table>
+        <table class="table-main table">
             <thead>
                 <tr>
-                    <th>Nome</th>
-                    <th>Telefone</th>
-                    <th>E-Mail</th>
+                    <th scope="col">Nome</th>
+                    <th scope="col">Número</th>
+                    <th scope="col">E-Mail</th>
                 </tr>
             </thead>
-            <tbody data-schedule>
-                
+            <tbody>
+
             </tbody>
         </table>
-    </main>
+        <button id="add-button">Adicionar</button>
 
-    <button class="write" type="button">Inserir dados</button>
-
-    <script src="./js/writeData.js"></script>
-    <script src="./js/restart.js"></script>
-    
-    <script src="./js/writer.js"></script>
-    <script src="./js/excluir.js"></script>
-</body>
+        <script src="./js/jquery.js"></script>
+        <script src="./js/add-data.js"></script>
+        <script src="./js/writer.js"></script>
+        <script src="./js/saver.js"></script>
+        <script src="./js/restart.js"></script>
+        <script src="./js/remove.js"></script>
+        <script src="./js/select.js"></script>
+    </body>
 </html>

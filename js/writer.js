@@ -1,16 +1,24 @@
-function write(name, number, email){
-    console.log("escrevendo dados");
-    const line = document.createElement("tr");
-    const content = 
-        `<td class="column-table">${name}</td>
-        <td class="column-table">${number}</td>
-        <td class="column-table">${email}</td>
-        <td><button class="remove">Remover</button><td>`;
-    line.innerHTML = content;
+function save(name, number, email){
+    var table = document.querySelector(".table-main");
 
-    const table = document.querySelector("[data-schedule]");
-    table.appendChild(line);
+    var mainTr = document.createElement("tr");
+    mainTr.classList.add('lines');
+    var nameTd = document.createElement("td");
+    var numberTd = document.createElement("td");
+    var emailTd = document.createElement("td");
 
+    nameTd.textContent = name;
+    numberTd.textContent = number;
+    emailTd.textContent = email;
 
-    return table;
-}
+    mainTr.appendChild(nameTd);
+    mainTr.appendChild(numberTd);
+    mainTr.appendChild(emailTd);
+    
+
+    table.appendChild(mainTr);
+    
+    var trs = select("tr.lines");
+    console.log(trs);
+
+};
