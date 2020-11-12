@@ -7,23 +7,23 @@
         <link rel="stylesheet" href="./css/style.css">
     </head>
     <body>
-        <h2 class="title-register">Para se cadastrar preencha os campos abaixo.</h2>
+        <h2 class="title-register h2">Para se cadastrar preencha os campos abaixo.</h2>
         <form class="input-form">
             <div class="form-group">
-                <label for="form-name">Nome: </label>
+                <label for="name">Nome: </label>
                 <input type="text" class="form-control" id="name" name="name">
             </div>
             <div class="form-group">
-                <label for="form-number">Número: </label>
+                <label for="number">Número: </label>
                 <input type="tel" class="form-control" id="number" name="number">
             </div>
             <div class="form-group">
-                <label for="form-email">E-Mail: </label>
+                <label for="email">E-Mail: </label>
                 <input type="email" class="form-control" id="email" name="email">
                 <small id="emailHelp" class="form-text text-muted">Seu e-mail está seguro conosco.</small>
             </div>
             </form>
-
+    
         <table class="table-main table">
             <thead>
                 <tr>
@@ -32,18 +32,16 @@
                     <th scope="col">E-Mail</th>
                 </tr>
             </thead>
-            <tbody>
-
+            <tbody class="table-body">
+                
             </tbody>
         </table>
-        <button id="add-button">Adicionar</button>
+        <button type="button" onclick="initTr()" class="btn btn-success add-button">Adicionar</button>
 
-        <script src="./js/jquery.js"></script>
+        <script src="./css/bootstrap/js/jquery.js"></script>
         <script src="./js/add-data.js"></script>
-        <script src="./js/writer.js"></script>
-        <script src="./js/saver.js"></script>
-        <script src="./js/restart.js"></script>
         <script src="./js/remove.js"></script>
-        <script src="./js/select.js"></script>
+        <script src="./js/edit.js"></script>
+        <script src="./js/saver.js"></script>
     </body>
 </html>
