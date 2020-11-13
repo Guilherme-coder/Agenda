@@ -50,30 +50,36 @@ function makeTr(name, number, email){
     const tdNumber = document.createElement("td");
     const tdEmail = document.createElement("td");
     tdEmail.classList.add("emails");
-
+    const tdActions = document.createElement("td");
+    tdActions.classList.add("actions");
+    
+    
     const removeButton = document.createElement("button");
     removeButton.classList.add("btn");
     removeButton.classList.add("btn-danger");
     removeButton.classList.add("remove");
     removeButton.setAttribute("type", "button");
     removeButton.textContent = "Remover";
-
+    
     const editButton = document.createElement("button");
     editButton.classList.add("btn");
     editButton.classList.add("btn-info");
     editButton.classList.add("edit");
     editButton.setAttribute("type", "button");
     editButton.textContent = "Editar";
-
+    
     tdName.textContent = name;
     tdNumber.textContent = number;
     tdEmail.textContent = email;
-
+    
+    tdActions.appendChild(removeButton);
+    tdActions.appendChild(editButton);
+    
     trMain.appendChild(tdName);
     trMain.appendChild(tdNumber);
     trMain.appendChild(tdEmail);
-    trMain.appendChild(removeButton);
-    trMain.appendChild(editButton);
+    
+    trMain.appendChild(tdActions);
 
 
     tableBody.appendChild(trMain);
