@@ -1,5 +1,4 @@
 var input = document.querySelector(".input-form");
-
 setEmpty(input);
 
 function initTr(){
@@ -26,7 +25,7 @@ function getInput(input){
     if(!validateName(name)){
         alert("O dado que foi inserido na area do nome não pode ser aceito.");
         throw "O dado que foi inserido na area do nome não pode ser aceito.";
-    }
+    };
 
     if(!!validateNumber(number)){
         alert("O dado que foi inserido na area do número de telefone não pode ser aceito.");
@@ -36,9 +35,9 @@ function getInput(input){
     if(!validateEmail(email)){
         alert("O dado que foi inserido na area do email não pode ser aceito.");
         throw "O dado que foi inserido na area do email não pode ser aceito.";
-    }
+    };
     return [name, number, email];
-}
+};
 
 
 function makeTr(name, number, email){
@@ -88,4 +87,4 @@ function setEmpty(form){
 
     form.name.focus();
 
-}
+};

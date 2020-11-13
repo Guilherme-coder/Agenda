@@ -3,16 +3,8 @@ var table = document.querySelector(".table-main");
 table.addEventListener("click", (event) => {
     if(event.target.className === "btn btn-danger remove"){
         alert("Esse item da agenda vai ser excluído.");
-        
-        
-        const excluded = event.target.parentNode;
-        console.log(excluded);
-        
-        
-        
+        let excluded = event.target.parentNode;
         let nome = excluded.childNodes;
-        console.log(nome[2]);
-
         for(let i = 0 ; i < localStorage.length ; i++){
             let data = JSON.parse(localStorage.getItem(i));
             if(nome[2].textContent === data[0].email){
@@ -25,15 +17,6 @@ table.addEventListener("click", (event) => {
                 }, 200);
             };
         };
-        
-        
-        
-        
-        
-        
-        
-        
-        
-    }
+    };
 });
 
