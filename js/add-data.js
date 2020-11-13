@@ -1,4 +1,3 @@
-const add = document.querySelector(".add-button");
 var input = document.querySelector(".input-form");
 
 setEmpty(input);
@@ -24,6 +23,20 @@ function getInput(input){
     const name = input.name.value;
     const number = input.number.value;
     const email = input.email.value;
+    if(!validateName(name)){
+        alert("O dado que foi inserido na area do nome não pode ser aceito.");
+        throw "O dado que foi inserido na area do nome não pode ser aceito.";
+    }
+
+    if(!!validateNumber(number)){
+        alert("O dado que foi inserido na area do número de telefone não pode ser aceito.");
+        throw "O dado que foi inserido na area do número de telefone não pode ser aceito.";
+    };    
+
+    if(!validateEmail(email)){
+        alert("O dado que foi inserido na area do email não pode ser aceito.");
+        throw "O dado que foi inserido na area do email não pode ser aceito.";
+    }
     return [name, number, email];
 }
 
@@ -34,8 +47,10 @@ function makeTr(name, number, email){
     const trMain = document.createElement("tr");
     trMain.classList.add("lines");
     const tdName = document.createElement("td");
+    tdName.classList.add("names");
     const tdNumber = document.createElement("td");
     const tdEmail = document.createElement("td");
+    tdEmail.classList.add("emails");
 
     const removeButton = document.createElement("button");
     removeButton.classList.add("btn");
