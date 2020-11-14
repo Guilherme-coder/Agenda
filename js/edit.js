@@ -14,6 +14,7 @@ table.addEventListener("click", (event) => {
         let nome = excluded.childNodes;
         for(let i = 0 ; i < localStorage.length ; i++){
             let data = JSON.parse(localStorage.getItem(i));
+            console.log(nome[0].textContent);
             if(data[0].name === nome[0].textContent){    
                 localStorage.removeItem(i);
                 let fakeData = new Array();

@@ -9,12 +9,6 @@ body{
     opacity: 0;
     transition: .5s;
 }
-.edit{
-    margin-left: .2em;
-}
-.searchButton{
-    margin-top: 1em;
-}
 .lines{
     background-color: #EEEEEE;
 }
@@ -39,9 +33,6 @@ body{
         height: 3em;
         padding: 0;
     }
-    .edit{
-        margin: .5em 0 0 0;
-    }
     .lines{
         margin: 0;
         border: 0;
@@ -52,7 +43,7 @@ body{
         padding: 0;
     }
     .table td{
-        padding: .9em;
+        padding: .2em;
     }
     .add-button{
         margin: 1.3em;
@@ -61,16 +52,24 @@ body{
 
 @media(min-width: 450px){
     body{
-        width: 85%;
+        width: 97%;
         font-size: 1.5em;
     }
     .table-main{
-        width: 90%;
+        width: 97%;
         margin: 0 auto;
         font-size: .7em;
     }
     .table td{
-        padding: 1.3em;
+        padding: .7em;
+    }
+    .emails{
+        width: 80%;
+        word-break: break-all;
+    }
+    .edit{
+        margin-left: 0;
+        margin-top: .3em;
     }
 }
 
@@ -84,10 +83,17 @@ body{
         margin: 0 auto;
         font-size: .8em;
     }
+    .edit, .remove{
+        margin-top: .3em 0;
+    }
+    .edit{
+        margin-left: 0;
+    }
     .table td{
         padding: 1em;
     }
 }
+
 
 @media(min-width: 1300px){
     body{
@@ -100,12 +106,9 @@ body{
         font-size: .8em;
     }
     .table td{
-        padding: 1em;
+        padding: .7em 1em;
     }
     .edit, .remove{
-        margin: 0;
-    }
-    .edit{
-        margin-left: .3em;
+        margin: .5em 0;
     }
 }
