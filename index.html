@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+        <link rel="stylesheet" href="./css/bootstrap/css/bootstrap.min.css">
+        <link rel="stylesheet" href="./css/style.css">
+    </head>
+    <body>
+        <h2 class="title-register h2">Para se cadastrar preencha os campos abaixo.</h2>
+        <form class="input-form">
+            <div class="form-group">
+                <h5>Busque pacientes pelo nome: </h5>
+                <input type="text" class="form-control" id="search" name="search" placeholder="Ex: Guilherme Hendres">
+            </div>
+            <div class="form-group">
+                <label for="name">Seu nome: </label>
+                <input type="text" class="form-control" id="name" name="name" placeholder="Ex: Guilherme Hendres" required>
+            </div>
+            <div class="form-group">
+                <label for="number">Seu número de telefone: </label>
+                <input type="tel" class="form-control" id="number" name="number" placeholder="Ex: 80028922" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Seu e-Mail: </label>
+                <input type="email" class="form-control" id="email" name="email" placeholder="Ex: exemplo@teste.com" required>
+                <small id="emailHelp" class="form-text text-muted">Seu e-mail está seguro conosco.</small>
+            </div>
+        </form>
+            
+        <button type="button" onclick="makeTr()" class="btn btn-success add-button">Adicionar</button>
+        <button type="button" class="btn btn-primary edit-button disabled">Editar</button>
+        
+        <table class="table-main table">
+            <thead>
+                <tr>
+                    <th scope="col">Nome</th>
+                    <th scope="col">Número</th>
+                    <th scope="col">E-Mail</th>
+                </tr>
+            </thead>
+            <tbody id="table-body" class="table-body">
+                
+            </tbody>
+        </table>
+
+        <script src="./css/bootstrap/js/jquery.js"></script>
+        <script src="./js/validation.js"></script>
+        <script src="./js/getValues.js"></script>
+        <script src="./js/edit.js"></script>
+        <script src="./js/makeTr.js"></script>
+    </body>
+</html>

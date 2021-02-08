@@ -1,0 +1,158 @@
+.disabled{
+    display: none;
+}
+.canceled{
+    opacity: 0;
+    transition: .5s;
+}
+body{
+    width: 80%;
+    margin: 0 auto;
+}
+.h2{
+    text-align: center;
+}
+.lines{
+    background-color: #EEEEEE;
+}
+
+@media(min-width: 200px){
+    body{
+        width: 97%;
+    }
+    .table-main{
+        width: 85%;
+        margin: 0 auto;
+        font-size: .6em;
+    }
+    td{
+        padding: 0;
+    }
+    #table-remove, #table-edit, .add-button, .edit-button{
+        font-size: .8em;
+        width: 6.5em;
+        height: 3em;
+        padding: 0;
+    }
+    .lines{
+        margin: 0;
+        border: 0;
+        padding: 0;
+    }
+    .names{
+        text-align: center;
+        padding: 0;
+    }
+    .table td{
+        padding: .2em;
+    }
+    .emails{
+        width: 80%;
+        word-break: break-all;
+    }
+    .add-button, .edit-button{
+        margin: 1.3em;
+    }
+}
+
+@media(min-width: 300px){
+    body{
+        width: 97%;
+    }
+    .table-main{
+        width: 85%;
+        margin: 0 auto;
+        font-size: .6em;
+    }
+    td{
+        padding: 0;
+    }
+    #table-remove, #table-edit, .add-button, .edit-button{
+        font-size: .8em;
+        width: 6.5em;
+        height: 3em;
+        padding: 0;
+    }
+    .lines{
+        margin: 0;
+        border: 0;
+        padding: 0;
+    }
+    .names{
+        text-align: center;
+        padding: 0;
+    }
+    .table td{
+        padding: .2em;
+    }
+    .emails{
+        width: 80%;
+        word-break: break-all;
+    }
+    .add-button, .edit-button{
+        margin: 1.3em;
+    }
+}
+
+@media(min-width: 550px){
+    body{
+        width: 97%;
+        font-size: 1.5em;
+    }
+    .table-main{
+        width: 97%;
+        margin: 0 auto;
+        font-size: .7em;
+    }
+    .table td{
+        padding: .7em;
+    }
+    .emails{
+        width: 80%;
+        word-break: break-all;
+    }
+    #table-edit{
+        margin-left: 0;
+        margin-top: .3em;
+    }
+}
+
+@media(min-width: 768px){
+    body{
+        width: 85%;
+        font-size: 1.5em;
+    }
+    .table-main{
+        width: 90%;
+        margin: 0 auto;
+        font-size: .8em;
+    }
+    #table-edit, #table-remove{
+        margin-top: .3em 0;
+    }
+    #table-edit{
+        margin-left: 0;
+    }
+    .table td{
+        padding: 1em;
+    }
+}
+
+
+@media(min-width: 1300px){
+    body{
+        width: 85%;
+        font-size: 1.5em;
+    }
+    .table-main{
+        width: 90%;
+        margin: 0 auto;
+        font-size: .8em;
+    }
+    .table td{
+        padding: .7em 1em;
+    }
+    #table-edit, #table-remove{
+        margin: .5em 0;
+    }
+}
